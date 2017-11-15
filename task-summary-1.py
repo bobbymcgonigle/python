@@ -10,7 +10,7 @@ lines = sys.stdin.readlines()
 
 files = {}
 
-i = 1                                           # Started at i=1 because first extension is irrelevant to task
+i = 0                                          
 while i < len(lines):                           # Use while loop when we don't know how many times we're gonna iterate
     currentFile = lines[i].strip()              # Strip leading and trailing whitespace.
     
@@ -26,4 +26,3 @@ while i < len(lines):                           # Use while loop when we don't k
 for word,status in sorted(files.items()):
     if status == True:
         print word
-	
