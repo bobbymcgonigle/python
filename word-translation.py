@@ -19,11 +19,10 @@ ten zehn
 
 import sys
 
-""" Ensured all words are striped of \n and ' ' before being added to:"""
 dictionary = {}
 toBeTranslated = {}
 
-with open("C:\\Users\\Ya Boy Bob\\PycharmProjects\\DCUTasks\\text-files\\translations.txt") as f:
+with open("CHANGE TO FILE LOCATION") as f:
     file = f.readlines()
 
 """ Make dictionary with the English as key, German as value """
