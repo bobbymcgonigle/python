@@ -19,26 +19,27 @@ ten zehn
 
 import sys
 
+""" Ensured all words are striped of \n and ' ' before being added to:"""
 dictionary = {}
 toBeTranslated = {}
 
-with open("File location/name (change me)") as f:
+with open("C:\\Users\\Ya Boy Bob\\PycharmProjects\\DCUTasks\\text-files\\translations.txt") as f:
     file = f.readlines()
 
-# Make dictionary with the English as key, German as value
+""" Make dictionary with the English as key, German as value """
 for i in range(len(file)):
     currentLine = file[i].rstrip()
-    words = currentLine.split()
-    dictionary[words[0]] = words[1]
+    words = currentLine.split()			# split() function by default uses whitespace as it's delimiter
+    dictionary[words[0]] = words[1]		# English key in dictionary = German value in dictionary
 
 input = sys.stdin.readlines()
 
-# See what words need to be translate from input
+""" See what words need to be translate from input """
 for i in range(len(input)):
     if input[i].rstrip() in dictionary:
         toBeTranslated[input[i].rstrip()] = True
 
-# Find what's True in toBeTranslated list -> then print it's german from dictionary
+""" Find what's True in toBeTranslated list -> then print it's german from dictionary """
 for english,translationRequested in toBeTranslated.items():
     if translationRequested:
         print (dictionary[english]) # Print value at English index
