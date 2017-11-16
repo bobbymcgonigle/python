@@ -13,13 +13,13 @@ Write a Python script named word-translation.py which reads a sequence of words 
 for each word, outputs the translated word.
 #### Example translation.txt
 
-one eins\n
-two zwei
-three drei
-four vier
-five funf
-six sechs
-seven sieben
-eight acht
-nine neun
-ten zehn
+1) one eins
+2) two zwei
+3) three drei
+4) four vier
+5) five funf
+6) six sechs
+7) seven sieben
+8) eight acht
+9) nine neun
+10) ten zehn
