@@ -23,3 +23,5 @@ for each word, outputs the translated word.
 8) eight acht
 9) nine neun
 10) ten zehn
+
+Test
