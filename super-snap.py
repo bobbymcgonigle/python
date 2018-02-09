@@ -5,7 +5,7 @@
 
 
 import sys
-
+aSDdnuwnfikewnfiewnfikfwenwienfwe
 lines = sys.stdin.readlines()
 
 cards = {}
